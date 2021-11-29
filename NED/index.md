@@ -12,8 +12,8 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 
 <table class="download" cellspacing="10" style="text-align:center; margin-left: auto; margin-right: auto;" border="0">
 <tr>
-	<td><a href="paper_link"><img style="height:110px;" src="/assets/img/publications/fsgan/thumb_paper.jpg" border="0" /></a></td>
-	<td><a href="github_link"><img style="height:110px;" src="imgs/github.png" border="0" /></a></td>
+	<td><a href="paper_link"><img style="height:110px;" src="/assets/img/publications/fsgan/thumb_paper.jpg" border="1" /></a></td>
+	<td><a href="github_link"><img style="height:110px;" src="imgs/github.png" border="1" /></a></td>
 </tr>
 <tr>
 	<td><a href="paper_link">Paper</a></td>
@@ -25,9 +25,7 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 <a href="github_link"><img style="height:110px;" src="imgs/github.png" border="1" />
 </center>
 <br>
-<center>
 <a href="paper_link">Paper</a>
-</center>
 
 **<center>Overview</center>**
 ![imgs/pipeline.jpg](imgs/pipeline.jpg)
