@@ -7,9 +7,8 @@ youtubeId: C7IcRHHwrfo
 
 ## <center>Neural Emotion Director: Speech-preserving semantic control of facial expressions in “in-the-wild” videos</center>
 
-### <center>Foivos Paraperas Papantoniou<sup>1</sup>, Panagiotis P. Filntisis<sup>1</sup>, Petros Maragos<sup>1</sup>, Anastasios Roussos<sup>2,3</sup></center>
+#### <center>Foivos Paraperas Papantoniou<sup>1</sup>, Panagiotis P. Filntisis<sup>1</sup>, Petros Maragos<sup>1</sup>, Anastasios Roussos<sup>2,3</sup></center>
 <center>
-<br><br>
 <sup>1</sup>School of Electrical & Computer Engineering, National Technical University of Athens, Greece<br>
 <sup>2</sup>Institute of Computer Science (ICS), Foundation for Research & Technology - Hellas (FORTH), Greece<br>
 <sup>3</sup>College of Engineering, Mathematics and Physical Sciences, University of Exeter, UK<br>
