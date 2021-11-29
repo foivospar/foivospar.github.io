@@ -22,7 +22,7 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 </table>
 
 <center>
-<a href="github_link"><img style="height:110px;" src="imgs/github.png" border="1" /></a>
+<a href="github_link"><img style="height:110px;" src="imgs/github.png" /></a>
 <br>
 <a href="paper_link">Paper</a>
 </center>
