@@ -14,9 +14,9 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 <a href="github_link"><img style="height:110px;" src="imgs/github.png" /></a>
 <br>
 <a href="github_link">Paper</a>
-<br>
-<a href="github_link"><img style="height:110px;" src="imgs/github.png" /></a>
 <br><br>
+<a href="github_link"><img style="height:110px;" src="imgs/github.png" /></a>
+<br>
 <a href="github_link">Code</a>
 </center>
 	
@@ -24,7 +24,9 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 ![imgs/pipeline.jpg](imgs/pipeline.jpg)
 
 **<center>Video</center>**
+<center>
 {% include youtubePlayer.html id=page.youtubeId %}
+</center>
 
 You can use the [editor on GitHub](https://github.com/foivospar/foivospar.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
