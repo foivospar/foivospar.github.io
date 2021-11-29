@@ -16,7 +16,7 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 <a href="github_link">Paper</a>
 <br>
 <a href="github_link"><img style="height:110px;" src="imgs/github.png" /></a>
-<br>
+<br><br>
 <a href="github_link">Code</a>
 </center>
 	
