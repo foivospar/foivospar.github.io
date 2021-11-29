@@ -2,7 +2,7 @@
 
 ![imgs/pipeline.jpg](imgs/pipeline.jpg)
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/OFLfWNYjmYI/0.jpg)](http://www.youtube.com/watch?v=OFLfWNYjmYI "Video Title")
+<button name="button" onclick="http://www.google.com">Click me</button>
 
 **<center>Abstract</center>**
   
