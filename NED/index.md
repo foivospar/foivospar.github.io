@@ -2,12 +2,12 @@
 youtubeId: C7IcRHHwrfo
 ---
 
+![imgs/teaser.png](imgs/teaser.png)
 <img src="imgs/teaser.png" alt="teaser" width="1000"/>
 
 
 ## Neural Emotion Director: Speech-preserving semantic control of facial expressions in “in-the-wild” videos
 
-**<center>Abstract</center>**
 
 <blockquote>
 <p style='text-align: justify;'>
