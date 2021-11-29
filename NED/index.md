@@ -2,6 +2,8 @@
 youtubeId: C7IcRHHwrfo
 ---
 
+asada
+
 ## Neural Emotion Director: Speech-preserving semantic control of facial expressions in “in-the-wild” videos
 
 **<center>Abstract</center>**
