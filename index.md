@@ -2,8 +2,6 @@
 
 ![imgs/pipeline.jpg](imgs/pipeline.jpg)
 
-<button name="button" onclick="http://www.google.com">Click me</button>
-
 **<center>Abstract</center>**
   
 <p style='text-align: justify;'>
