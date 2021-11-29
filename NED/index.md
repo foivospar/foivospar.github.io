@@ -4,6 +4,11 @@ youtubeId: C7IcRHHwrfo
 
 ## Neural Emotion Director: Speech-preserving semantic control of facial expressions in “in-the-wild” videos
 
+<p align="center">
+  <img src="https://github.com/foivospar/foivospar.github.io/blob/main/NED/imgs/pipeline.jpg" />
+</p>
+
+
 ![imgs/pipeline.jpg](imgs/pipeline.jpg)
 
 **<center>Abstract</center>**
