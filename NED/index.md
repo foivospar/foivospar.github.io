@@ -23,6 +23,7 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 <img src="imgs/pipeline.jpg" alt="pipeline" width="1000"/>
 
 <br>
+**<center>Links</center>**
 <center>
 <a href="github_link"><img style="height:110px;" src="imgs/GitHub-Mark-120px-plus.png" /></a>
 <br>
