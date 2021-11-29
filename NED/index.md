@@ -21,7 +21,10 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 <br>
 <a href="github_link">Code</a>
 </center>
-	
+
+<a href="http://github.com/YuvalNirkin"><i class="fa fa-github" style="font-size:96px;color:black"></i></a>
+
+
 **<center>Overview</center>**
 ![imgs/pipeline.jpg](imgs/pipeline.jpg)
 
