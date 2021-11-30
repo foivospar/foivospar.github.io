@@ -34,7 +34,7 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 <br><br>
 <a href="github_link"><img style="height:110px;" src="imgs/GitHub-Mark-120px-plus.png" /></a>
 <br>
-<a href="github_link">Code</a>
+<a href="https://github.com/foivospar/NED">Code</a>
 </center>
 
 <br>
