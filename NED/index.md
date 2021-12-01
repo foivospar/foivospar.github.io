@@ -42,3 +42,9 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 <center>
 {% include youtubePlayer.html id=page.youtubeId %}
 </center>
+
+
+<br>
+**<center>Citation</center>**
+```
+```
