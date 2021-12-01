@@ -22,11 +22,15 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 </blockquote>
  
 <br>
+<br>
 **<center>Overview</center>**
+<br>
 <img src="imgs/pipeline.jpg" alt="pipeline" width="1000"/>
 
 <br>
+<br>
 **<center>Links</center>**
+<br>
 <center>
 <a href="github_link"><img style="height:110px;" src="imgs/paper.png" /></a>
 <br>
@@ -38,13 +42,17 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 </center>
 
 <br>
+<br>
 **<center>Video</center>**
+<br>
 <center>
 {% include youtubePlayer.html id=page.youtubeId %}
 </center>
 
 
 <br>
+<br>
 **<center>Citation</center>**
+<br>
 ```
 ```
