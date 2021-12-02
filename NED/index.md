@@ -4,7 +4,8 @@ youtubeId: Li6W8pRDMJQ
 
 <img src="imgs/teaser.png" alt="teaser" width="1000"/>
 
-
+<br>
+<br>
 ## <center>Neural Emotion Director: Speech-preserving semantic control of facial expressions in “in-the-wild” videos</center>
 #### <center>Foivos Paraperas Papantoniou<sup>1</sup>, Panagiotis P. Filntisis<sup>1</sup>, Petros Maragos<sup>1</sup>, Anastasios Roussos<sup>2,3</sup></center>
 <br>
