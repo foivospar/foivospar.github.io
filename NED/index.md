@@ -32,9 +32,9 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 **<center>Links</center>**
 <br>
 <center>
-<a href="github_link"><img style="height:110px;" src="imgs/paper.png" /></a>
+<a href="https://arxiv.org/pdf/2112.00585.pdf"><img style="height:110px;" src="imgs/paper.png" /></a>
 <br>
-<a href="github_link">Paper</a>
+<a href="https://arxiv.org/pdf/2112.00585.pdf">Paper</a>
 <br><br>
 <a href="https://github.com/foivospar/NED"><img style="height:110px;" src="imgs/GitHub-Mark-120px-plus.png" /></a>
 <br>
@@ -55,4 +55,12 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 **<center>Citation</center>**
 <br>
 ```
+@misc{paraperas2021neural,
+      title={Neural Emotion Director: Speech-preserving semantic control of facial expressions in "in-the-wild" videos}, 
+      author={Foivos Paraperas Papantoniou and Panagiotis P. Filntisis and Petros Maragos and Anastasios Roussos},
+      year={2021},
+      eprint={2112.00585},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
