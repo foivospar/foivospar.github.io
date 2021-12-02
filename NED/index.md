@@ -55,12 +55,10 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 **<center>Citation</center>**
 <br>
 ```
-@misc{paraperas2021neural,
-      title={Neural Emotion Director: Speech-preserving semantic control of facial expressions in "in-the-wild" videos}, 
-      author={Foivos Paraperas Papantoniou and Panagiotis P. Filntisis and Petros Maragos and Anastasios Roussos},
-      year={2021},
-      eprint={2112.00585},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{paraperas2021neural,
+         title={Neural Emotion Director: Speech-preserving semantic control of facial expressions in "in-the-wild" videos}, 
+         author={Paraperas Papantoniou, Foivos and Filntisis, Panagiotis P. and Maragos, Petros and Roussos, Anastasios},
+         journal={arXiv preprint arXiv:2112.00585},
+         year={2021}
 }
 ```
