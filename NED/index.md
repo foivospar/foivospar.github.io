@@ -32,7 +32,7 @@ The proposed system can translate a facial performance to any of the 6 basic emo
 <br>
 <img src="imgs/pipeline.jpg" alt="pipeline" width="1000"/>
 <p style='text-align: justify;'>
-First, we perform 3D facial recovery and alignment on the input frames to obtain the expression parameters of the face. Then, these parameters are translated using our *3D-based Emotion Manipulator*, where the style vector is computed by either a semantic label (i.e., the emotion), or by a driving reference video. Finally, the produced 3D facial shape is concatenated with the Normalized Mean Face Coordinate (NMFC) and eye images and fed into a neural renderer (along with previously computed frames), in order to render the manipulated photo-realistic frames.
+First, we perform 3D facial recovery and alignment on the input frames to obtain the expression parameters of the face. Then, these parameters are translated using our <em>3D-based Emotion Manipulator</em>, where the style vector is computed by either a semantic label (i.e., the emotion), or by a driving reference video. Finally, the produced 3D facial shape is concatenated with the Normalized Mean Face Coordinate (NMFC) and eye images and fed into a neural renderer (along with previously computed frames), in order to render the manipulated photo-realistic frames.
 </p>
 
 <br>
