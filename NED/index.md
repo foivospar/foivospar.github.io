@@ -25,8 +25,10 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 <br>
 <br>
 **<center>Overview</center>**
+Our method can translate a facial performance to any of the 6 basic emotions (angry, happy, surprise, fear, disgust, sadness) plus neutral, using only as input its semantic label, while retaining the original mouth motion. It also allows to attach a specific style to the target actor, without requiring person-specific training. This means that the reference style can be extracted at test time from any given reference video.
 <br>
 <img src="imgs/pipeline.jpg" alt="pipeline" width="1000"/>
+First, we perform 3D facial recovery and alignment on the input frames to obtain the expression parameters of the face. Then, these parameters are translated using our *3D-based Emotion Manipulator*, where the style vector is computed by either a semantic label (i.e., the emotion), or by a driving reference video. Finally, the produced 3D facial shape is concatenated with the Normalized Mean Face Coordinate (NMFC) and eye images and fed into a neural renderer (along with previously computed frames), in order to render the manipulated photo-realistic frames.
 
 <br>
 <br>
