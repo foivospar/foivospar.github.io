@@ -26,7 +26,7 @@ In this paper, we introduce a novel deep learning method for photo-realistic man
 <br>
 **<center>Overview</center>**
 <p style='text-align: justify;'>
-The proposed system can translate a facial performance to any of the 6 basic emotions (angry, happy, surprise, fear, disgust, sadness) plus neutral, using only as input its semantic label, while retaining the original mouth motion. It also allows to attach a specific style to the target actor, without requiring person-specific training. This means that the reference style can be extracted at test time from any given reference video.
+Our <em>Neural Emotion Director (NED)</em> can manipulate facial expressions in input videos while preserving speech, conditioned on either the semantic emotional label or on an external reference style as extracted from a reference video.
 </p>
 <br>
 <br>
