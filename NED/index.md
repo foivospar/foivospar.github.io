@@ -34,7 +34,8 @@ Our <em>Neural Emotion Director (NED)</em> can manipulate facial expressions in 
 <p style='text-align: justify;'>
 First, we perform 3D facial recovery and alignment on the input frames to obtain the expression parameters of the face. Then, these parameters are translated using our <em>3D-based Emotion Manipulator</em>, where the style vector is computed by either a semantic label (i.e., the emotion), or by a driving reference video. Finally, the produced 3D facial shape is concatenated with the Normalized Mean Face Coordinate (NMFC) and eye images and fed into a neural renderer (along with previously computed frames), in order to render the manipulated photo-realistic frames.
 </p>
-
+ 
+ 
 <br>
 <br>
 **<center>Links</center>**
@@ -51,16 +52,21 @@ First, we perform 3D facial recovery and alignment on the input frames to obtain
 
 <br>
 <br>
-**<center>Video</center>**
-<br>
-<center>
-{% include youtubePlayer.html id=page.youtubeId %}
-</center>
-
+**<center>Reference-guided results</center>**
 <center>
 <video id="reference" controls width="100%">
 <source src="imgs/NED_reference.mp4"	type="video/mp4">
 </video>
+</center>
+
+<br>
+<br>
+**<center>Demo video</center>**
+<p style='text-align: justify;'>
+For more details, check our full demo video.
+<br>
+<center>
+{% include youtubePlayer.html id=page.youtubeId %}
 </center>
 
 
