@@ -57,6 +57,15 @@ First, we perform 3D facial recovery and alignment on the input frames to obtain
 {% include youtubePlayer.html id=page.youtubeId %}
 </center>
 
+<div class="container section">
+    	<div class="section_title">reference</div>
+   		<center>
+        	<video id="teaser" autoplay controls muted loop width="100%">
+            	<source src="imgs/NED_reference.mp4"
+                	type="video/mp4">
+        	</video>
+    	</center>
+
 
 <br>
 <br>
