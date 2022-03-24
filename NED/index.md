@@ -64,9 +64,6 @@ First, we perform 3D facial recovery and alignment on the input frames to obtain
 **<center>Demo video</center>**
 <center>
 For more details, check our full demo video.
-</center>
-<br>
-<center>
 {% include youtubePlayer.html id=page.youtubeId %}
 </center>
 
