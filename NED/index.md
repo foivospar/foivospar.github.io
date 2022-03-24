@@ -58,7 +58,7 @@ First, we perform 3D facial recovery and alignment on the input frames to obtain
 </center>
 
 <center>
-<video id="reference" autoplay controls width="100%">
+<video id="reference" controls width="100%">
 <source src="imgs/NED_reference.mp4"	type="video/mp4">
 </video>
 </center>
