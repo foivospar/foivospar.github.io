@@ -62,8 +62,9 @@ First, we perform 3D facial recovery and alignment on the input frames to obtain
 <br>
 <br>
 **<center>Demo video</center>**
-<p style='text-align: justify;'>
+<center>
 For more details, check our full demo video.
+</center>
 <br>
 <center>
 {% include youtubePlayer.html id=page.youtubeId %}
