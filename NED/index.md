@@ -52,6 +52,26 @@ First, we perform 3D facial recovery and alignment on the input frames to obtain
 
 <br>
 <br>
+**<center>Demo video</center>**
+<center>
+For a detailed presentation, check our full demo video.
+{% include youtubePlayer.html id=page.youtubeId %}
+</center>
+
+
+<br>
+<br>
+**<center>Additional results</center>**
+<center>
+For more results, check the videos below.
+***Label-guided***
+<video id="labels" controls width="100%">
+<source src="imgs/NED_labels.mp4"	type="video/mp4">
+</video>
+</center>
+
+<br>
+<br>
 **<center>Label-guided results</center>**
 <center>
 <video id="labels" controls width="100%">
@@ -66,14 +86,6 @@ First, we perform 3D facial recovery and alignment on the input frames to obtain
 <video id="reference" controls width="100%">
 <source src="imgs/NED_reference.mp4"	type="video/mp4">
 </video>
-</center>
-
-<br>
-<br>
-**<center>Demo video</center>**
-<center>
-For more details, check our full demo video.
-{% include youtubePlayer.html id=page.youtubeId %}
 </center>
 
 
