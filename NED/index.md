@@ -39,9 +39,9 @@ td, th {
   </div>
 
 <center>
-<a href="https://arxiv.org/pdf/2112.00585.pdf"><img style="height:110px;" src="imgs/paper.png" /></a> <a href="https://arxiv.org/pdf/2112.00585.pdf">Paper</a>
-<br><br>
-<a href="https://github.com/foivospar/NED"><img style="height:110px;" src="imgs/GitHub-Mark-120px-plus.png" /></a> <a href="https://github.com/foivospar/NED">Code</a>
+<a href="https://arxiv.org/pdf/2112.00585.pdf"><img style="height:110px;" src="imgs/paper.png" /></a> <a href="https://github.com/foivospar/NED"><img style="height:110px;" src="imgs/GitHub-Mark-120px-plus.png" /></a>
+<br>
+<a href="https://arxiv.org/pdf/2112.00585.pdf">Paper</a> <a href="https://github.com/foivospar/NED">Code</a>
 </center>
 
 <blockquote>
