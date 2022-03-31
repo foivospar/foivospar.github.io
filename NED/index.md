@@ -22,6 +22,7 @@ td, th {
 </center>
 <br>
 
+    <div>
     <table>
       <tr>
         <td align="center"><center><a href="https://arxiv.org/pdf/2112.00585.pdf"><img height="100" border="1" src="imgs/paper.png"></a></center></td>
@@ -32,6 +33,7 @@ td, th {
         <td align="center"><center>Code</center></td>
       </tr>   
     </table>
+    </div>
 
 <center>
 <a href="https://arxiv.org/pdf/2112.00585.pdf"><img style="height:110px;" src="imgs/paper.png" /></a> <a href="https://github.com/foivospar/NED"><img style="height:110px;" src="imgs/GitHub-Mark-120px-plus.png" /></a>
