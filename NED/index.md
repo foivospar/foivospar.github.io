@@ -2,6 +2,12 @@
 youtubeId: Li6W8pRDMJQ
 ---
 
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+
 <img src="imgs/teaser.png" alt="teaser" width="1000"/>
 
 <br>
@@ -29,48 +35,6 @@ youtubeId: Li6W8pRDMJQ
       </tr>
     </table>
   </div>
-
-<table width="900px" align="center">
-					<tbody>
-						<tr>
-							<td width="150px" align="center">
-								<center>
-									<span style="font-size:22px">
-										<a href="https://arxiv.org/pdf/2112.00585.pdf">
-											<img src="imgs/paper.png" alt="Paper" style="width:60px;height:78px;">
-										</a>
-									</span>
-								</center>
-							</td>
-							<td width="150px" align="center">
-								<center>
-									<span style="font-size:22px">
-										<a href="https://github.com/foivospar/NED">
-											<img src="imgs/GitHub-Mark-120px-plus.png" alt="Code" style="width:106px;height:60px">
-										</a>
-									</span>
-								</center>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<table width="900px" align="center">
-					<tbody>
-						<tr>
-							<td width="150px" align="center">
-								<center>
-									<span style="font-size:18px">Paper</span>
-								</center>
-							</td>
-							<td width="150px" align="center">
-								<center>
-									<span style="font-size:18px;">Code
-									</span>
-								</center>
-							</td>
-						</tr>
-					</tbody>
-				</table>
 
 <blockquote>
 <p style='text-align: justify;'>
