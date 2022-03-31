@@ -55,6 +55,7 @@ First, we perform 3D facial recovery and alignment on the input frames to obtain
 **<center>Demo video</center>**
 <center>
 For a detailed presentation, check our full demo video.
+<br>
 {% include youtubePlayer.html id=page.youtubeId %}
 </center>
 
@@ -63,8 +64,9 @@ For a detailed presentation, check our full demo video.
 <br>
 **<center>Additional results</center>**
 <center>
-For more results, check the videos below.
-***Label-guided***
+Here, we provide additional results on YouTube videos.
+<br>
+Label-guided
 <video id="labels" controls width="100%">
 <source src="imgs/NED_labels.mp4"	type="video/mp4">
 </video>
