@@ -18,7 +18,7 @@ youtubeId: Li6W8pRDMJQ
 <center>
 <a href="https://arxiv.org/pdf/2112.00585.pdf"><img style="height:80px;" src="imgs/paper.png" /></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/foivospar/NED"><img style="height:80px;" src="imgs/GitHub-Mark-120px-plus.png" /></a>
 <br>
-<a href="https://arxiv.org/pdf/2112.00585.pdf">Paper</a>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<a href="https://github.com/foivospar/NED">Code</a>&ensp;&nbsp;
+<a href="https://arxiv.org/pdf/2112.00585.pdf">Paper</a>&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<a href="https://github.com/foivospar/NED">Code</a>&ensp;&nbsp;
 </center>
 
 <br>
