@@ -16,11 +16,13 @@ youtubeId: Li6W8pRDMJQ
 </center>
 <br>
 
+<pre>
 <center>
 <a href="https://arxiv.org/pdf/2112.00585.pdf"><img style="height:110px;" src="imgs/paper.png" /></a>            <a href="https://github.com/foivospar/NED"><img style="height:110px;" src="imgs/GitHub-Mark-120px-plus.png" /></a>
 <br>
 <a href="https://arxiv.org/pdf/2112.00585.pdf">Paper</a> <a href="https://github.com/foivospar/NED">Code</a>
 </center>
+</pre>
 
 <blockquote>
 <p style='text-align: justify;'>
