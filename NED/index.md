@@ -14,14 +14,14 @@ youtubeId: Li6W8pRDMJQ
 <sup>2</sup>Institute of Computer Science (ICS), Foundation for Research & Technology - Hellas (FORTH), Greece<br>
 <sup>3</sup>College of Engineering, Mathematics and Physical Sciences, University of Exeter, UK<br>
 </center>
-<br>
 
 <center>
 <a href="https://arxiv.org/pdf/2112.00585.pdf"><img style="height:80px;" src="imgs/paper.png" /></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/foivospar/NED"><img style="height:80px;" src="imgs/GitHub-Mark-120px-plus.png" /></a>
 <br>
-<a href="https://arxiv.org/pdf/2112.00585.pdf">Paper</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/foivospar/NED">Code</a>
+<a href="https://arxiv.org/pdf/2112.00585.pdf">Paper</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/foivospar/NED">Code</a>
 </center>
 
+<br>
 <blockquote>
 <p style='text-align: justify;'>
 In this paper, we introduce a novel deep learning method for photo-realistic manipulation of the emotional state of actors in ``in-the-wild'' videos. The proposed method is based on a parametric 3D face representation of the actor in the input scene that offers a reliable disentanglement of the facial identity from the head pose and facial expressions. It then uses a novel deep domain translation framework that alters the facial expressions in a consistent and plausible manner, taking into account their dynamics. Finally, the altered facial expressions are used to photo-realistically manipulate the facial region in the input scene based on an especially-designed neural face renderer. To the best of our knowledge, our method is the first to be capable of controlling the actor’s facial expressions by even using as a sole input the semantic labels of the manipulated emotions, while at the same time preserving the speech-related lip movements. We conduct extensive qualitative and quantitative evaluations and comparisons, which demonstrate the effectiveness of our approach and the especially promising results that we obtain. Our method opens a plethora of new possibilities for useful applications of neural rendering technologies, ranging from movie post-production and video games to photo-realistic affective avatars.
@@ -40,21 +40,6 @@ Our <em>Neural Emotion Director (NED)</em> can manipulate facial expressions in 
 <p style='text-align: justify;'>
 First, we perform 3D facial recovery and alignment on the input frames to obtain the expression parameters of the face. Then, these parameters are translated using our <em>3D-based Emotion Manipulator</em>, where the style vector is computed by either a semantic label (i.e., the emotion), or a driving reference video. Finally, the produced 3D facial shape is concatenated with the Normalized Mean Face Coordinate (NMFC) and eye images and fed into a neural renderer (along with previously computed frames), in order to render the manipulated photo-realistic frames.
 </p>
- 
- 
-<br>
-<br>
-**<center>Links</center>**
-<br>
-<center>
-<a href="https://arxiv.org/pdf/2112.00585.pdf"><img style="height:110px;" src="imgs/paper.png" /></a>
-<br>
-<a href="https://arxiv.org/pdf/2112.00585.pdf">Paper</a>
-<br><br>
-<a href="https://github.com/foivospar/NED"><img style="height:110px;" src="imgs/GitHub-Mark-120px-plus.png" /></a>
-<br>
-<a href="https://github.com/foivospar/NED">Code</a>
-</center>
 
 <br>
 <br>
