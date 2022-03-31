@@ -66,13 +66,13 @@ For a detailed presentation, check our full demo video.
 Here, we provide additional results on YouTube videos.
 <br>
 <br>
-Label-guided
+Label-guided manipulation
 <video id="labels" controls width="100%">
 <source src="imgs/NED_labels.mp4"	type="video/mp4">
 </video>
 <br>
 <br>
-Reference-guided results
+Reference-guided manipulation
 <video id="reference" controls width="100%">
 <source src="imgs/NED_reference.mp4"	type="video/mp4">
 </video>
