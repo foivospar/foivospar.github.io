@@ -35,6 +35,7 @@ td, th {
     </table>
     </div>
 
+<center>
 <table class="links" cellspacing="10" style="text-align:center; margin-left: auto; margin-right: auto;" border="0">
 <tr>
 	<td><a href="https://arxiv.org/pdf/2112.00585.pdf"><img style="height:110px;" src="imgs/paper.png" border="1" /></a></td>
@@ -45,6 +46,7 @@ td, th {
 	<td><a href="https://github.com/foivospar/NED">Code</a></td>
 </tr>
 </table>
+</center>
 
 <center>
 <a href="https://arxiv.org/pdf/2112.00585.pdf"><img style="height:110px;" src="imgs/paper.png" /></a> <a href="https://github.com/foivospar/NED"><img style="height:110px;" src="imgs/GitHub-Mark-120px-plus.png" /></a>
