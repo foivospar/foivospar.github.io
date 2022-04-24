@@ -74,10 +74,10 @@ Here, we provide additional results on YouTube videos.
 **<center>Citation</center>**
 <br>
 ```
-@article{paraperas2021neural,
+@article{paraperas2022ned,
          title={Neural Emotion Director: Speech-preserving semantic control of facial expressions in "in-the-wild" videos}, 
          author={Paraperas Papantoniou, Foivos and Filntisis, Panagiotis P. and Maragos, Petros and Roussos, Anastasios},
-         journal={arXiv preprint arXiv:2112.00585},
-         year={2021}
+         booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+         year={2022}
 }
 ```
