@@ -6,7 +6,7 @@ youtubeId: Li6W8pRDMJQ
 
 <br>
 ## <center>Neural Emotion Director: Speech-preserving semantic control of facial expressions in “in-the-wild” videos</center>
-### <center><strong>CVPR 2022 (Oral, Best paper candidate)</strong></center>
+### <center><strong>CVPR 2022 (Oral, Best Paper Finalist)</strong></center>
 #### <center>Foivos Paraperas Papantoniou<sup>1</sup>, Panagiotis P. Filntisis<sup>1</sup>, Petros Maragos<sup>1</sup>, Anastasios Roussos<sup>2,3</sup></center>
 <br>
 <center>
