@@ -119,8 +119,8 @@
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
         <p>
-            We propose a diffusion-based inpainting approach to es-
-            timate both the UV texture with existing baked illumination
+            We propose a diffusion-based inpainting approach to estimate both the UV 
+            texture with existing baked illumination
             and the actual reflectance of a face from an image in a single process. At
             the core of our approach lies an unconditional diffusion generative model 
             trained on pairs of textures and their accompanying reflectance.
@@ -129,9 +129,9 @@
             <img src="./static/images/method.jpg" alt="method" class="center">
           </div>
         <p>
-           We perform standard 3DMM fitting to get a partial UV texture via image-
-           to-uv rasterization. Then, starting from random noise, we utilize the known
-           texture to guide the sampling process of a texture/reflectance
+           At test time, we first perform standard 3DMM fitting to get a partial UV texture via image-to-uv rasterization. 
+           Then, starting from random noise, we utilize the known
+           texture to guide the sampling process of our texture/reflectance
            diffusion model towards completing the unobserved pixels. At the end of the process, 
            we acquire high-quality rendering assets, making our 3D avatar realistically renderable.
         </p>
@@ -140,7 +140,20 @@
     </div>
   </div>
 </section>
-
+ 
+<section class="section">
+<!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/watch?v=JiFIYKXB2tk"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
