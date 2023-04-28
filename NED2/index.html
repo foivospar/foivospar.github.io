@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Relightify: Relightable 3D faces from a single image via diffusion models">
+  <meta name="keywords" content="Diffusion Models, 3D Face Reconstruction, Avatars, Relightable">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relightify: Relightable 3D faces from a single image via diffusion models</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Relightify: Relightable 3D faces from a single image via diffusion models</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Foivos Paraperas Papantoniou</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="https://alexlattas.com">Alexandros Lattas</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+              <a href="">Stylianos Moschoglou</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.imperial.ac.uk/people/s.zafeiriou">Stefanos Zafeiriou</a><sup>1,2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Imperial College London,</span>
+            <span class="author-block"><sup>2</sup>Huawei</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Relightify</span> reconstructs highly accurate relightable 3D face avatars from a single image.
+      </h2>
+    </div>
+  </div>
+</section>
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Following the remarkable success of diffusion models on image generation, 
+            recent works have also demonstrated their impressive ability to address a number of inverse problems 
+            in an unsupervised way, by properly constraining the sampling process based on a conditioning input. 
+            Motivated by this, in this paper, we present the first approach to use diffusion models as a prior for 
+            highly accurate 3D facial BRDF reconstruction from a single image. We start by leveraging a high-quality 
+            UV dataset of facial reflectance (diffuse and specular albedo and normals), which we render under varying 
+            illumination settings to simulate natural RGB textures and, then, train an unconditional diffusion model 
+            on concatenated pairs of rendered textures and reflectance components. At test time, we fit a 3D morphable 
+            model to the given image and unwrap the face in a partial UV texture. By sampling from the diffusion model, 
+            while retaining the observed texture part intact, the model inpaints not only the self-occluded areas but 
+            also the unknown reflectance components, in a single sequence of denoising steps. In contrast to existing 
+            methods, we directly acquire the observed texture from the input image, thus, resulting in more faithful 
+            and consistent reflectance estimation. Through a series of qualitative and quantitative comparisons, we 
+            demonstrate superior performance in both texture completion as well as reflectance reconstruction tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    
+  <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/KB5hWos4Et8?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+    <!-- Method overview. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+        <p>
+            We propose a diffusion-based inpainting approach to estimate both the UV 
+            texture with existing baked illumination
+            and the actual reflectance of a face from an image in a single process. At
+            the core of our approach lies an unconditional diffusion generative model 
+            trained on pairs of textures and their accompanying reflectance.
+        </p>
+        <div>
+            <img src="./static/images/method.jpg" alt="method" class="center">
+          </div>
+        <p>
+           At test time, we first perform standard 3DMM fitting to get a partial UV texture via image-to-uv rasterization. 
+           Then, starting from random noise, we utilize the known
+           texture to guide the sampling process of our texture/reflectance
+           diffusion model towards completing the unobserved pixels. At the end of the process, 
+           we acquire high-quality rendering assets, making our 3D avatar realistically renderable.
+        </p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code></code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              The source code of this website is borrowed from <a
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
