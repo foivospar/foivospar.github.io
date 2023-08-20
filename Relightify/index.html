@@ -49,8 +49,8 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Imperial College London, UK,</span>
-            <span class="author-block"><sup>2</sup>Huawei Technologies Ltd, UK</span>
+            <span class="author-block"><sup>1</sup>Imperial College London,</span>
+            <span class="author-block"><sup>2</sup>Huawei Noah’s Ark Lab</span>
           </div>
 
           <div class="column has-text-centered">
@@ -116,20 +116,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Following the remarkable success of diffusion models on image generation,
-            recent works have also demonstrated their impressive ability to address a number of inverse problems
-            in an unsupervised way, by properly constraining the sampling process based on a conditioning input.
-            Motivated by this, in this paper, we present the first approach to use diffusion models as a prior for
-            highly accurate 3D facial BRDF reconstruction from a single image. We start by leveraging a high-quality
-            UV dataset of facial reflectance (diffuse and specular albedo and normals), which we render under varying
-            illumination settings to simulate natural RGB textures and, then, train an unconditional diffusion model
-            on concatenated pairs of rendered textures and reflectance components. At test time, we fit a 3D morphable
-            model to the given image and unwrap the face in a partial UV texture. By sampling from the diffusion model,
-            while retaining the observed texture part intact, the model inpaints not only the self-occluded areas but
-            also the unknown reflectance components, in a single sequence of denoising steps. In contrast to existing
-            methods, we directly acquire the observed texture from the input image, thus, resulting in more faithful
-            and consistent reflectance estimation. Through a series of qualitative and quantitative comparisons, we
-            demonstrate superior performance in both texture completion as well as reflectance reconstruction tasks.
+            Following the remarkable success of diffusion models on image generation, recent works have also
+            demonstrated their impressive ability to address a number of inverse problems in an unsupervised
+            way, by properly constraining the sampling process based on a conditioning input. Motivated by this,
+            in this paper, we present the first approach to use diffusion models as a prior for highly accurate
+            3D facial BRDF reconstruction from a single image. We start by leveraging a high-quality UV dataset
+            of facial reflectance (diffuse and specular albedo and normals), which we render under varying illumination
+            settings to simulate natural RGB textures and, then, train an unconditional diffusion model on concatenated
+            pairs of rendered textures and reflectance components. At test time, we fit a 3D morphable model to
+            the given image and unwrap the face in a partial UV texture. By sampling from the diffusion model,
+            while retaining the observed texture part intact, the model inpaints not only the self-occluded
+            areas but also the unknown reflectance components, in a single sequence of denoising steps. In contrast
+            to existing methods, we directly acquire the observed texture from the input image, thus, resulting
+            in more faithful and consistent reflectance estimation. Through a series of qualitative and quantitative
+            comparisons, we demonstrate superior performance in both texture completion as well as reflectance reconstruction tasks.
           </p>
         </div>
       </div>
@@ -152,8 +152,8 @@
 <section class="section">
     <div class="container is-max-desktop">
     <!-- Method overview. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
         <p>
@@ -177,6 +177,35 @@
       </div>
     </div>
   </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+  <!-- Results -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+         <h3 class="title is-4">Reconstructions “in the wild”</h3>
+         <div class="content has-text-justified">
+         <div>
+             <img src="./static/images/reconstructions.jpg" alt="reconstructions" class="center">
+         </div>
+         <p>
+             Our avatars are compatible with commercial renderers, enabling photo-realistic rendering in different environments.
+         </p>
+         </div>
+          <h3 class="title is-4">Challenging cases</h3>
+          <div class="content has-text-justified">
+          <div>
+              <img src="./static/images/comparison.png" alt="comparison" class="center">
+          </div>
+          <p>
+              We condition the reflectance prediction on the genuine visible facial texture, leading to more accurate capturing than fitting-based competitors.
+          </p>
+          </div>
+      </div>
+     </div>
+    </div>
 </section>
 
 <section class="section" id="BibTeX">
