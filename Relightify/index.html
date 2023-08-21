@@ -163,8 +163,11 @@
             trained on pairs of textures and their accompanying reflectance.
         </p>
         <div>
-            <img src="./static/images/method.jpg" alt="method" class="center">
-          </div>
+        <video id="method" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/method.mp4"
+                  type="video/mp4">
+        </video>
+        </div>
         <p>
            At test time, we first perform standard 3DMM fitting to get a partial UV texture via image-to-uv rasterization.
            Then, starting from random noise, we utilize the known
@@ -172,6 +175,9 @@
            diffusion model towards completing the unobserved pixels. At the end of the process,
            we acquire high-quality rendering assets, making our 3D avatar realistically renderable.
         </p>
+        <div>
+            <img src="./static/images/method.jpg" alt="method" class="center">
+          </div>
           </div>
       </div>
     </div>
