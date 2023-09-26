@@ -131,7 +131,7 @@
           {%- capture entryoral -%}{{ " " }}<strong style="color: red;">({{entry.oral}})</strong>{%- endcapture -%}
         {%- endif -%}
         {% assign entrytype_text = entrytype | strip_html | strip %}
-        {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" and entryoral != "" -%}, {%- endif -%}{{ entrymonth }}{{ entryyear }}{{ entryoral }}{%- endcapture -%}
+        {%- capture periodical -%}{{ entrytype }}{%- if entrytype_text != "" and entryyear != "" and entryoral != "" -%}, {%- endif -%}{{ entryyear }}{{ entryoral }}{%- endcapture -%}
         <div class="periodical">
           {{ periodical | strip }}
         </div>
