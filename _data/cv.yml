@@ -1,97 +1,43 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+#- title: General Information
+  #type: map
+  #contents:
+    #- name: Full Name
+      #value: Foivos Paraperas Papantoniou
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD in Computing
+      institution: Imperial College London, UK
+      year: 2022 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Supervisor<span>:</span> Prof. Stefanos Zafeiriou
+        - Research areas<span>:</span> 3D avatars, diffusion models, generative AI
+    - title: Diploma/MEng in Electrical & Computer Engineering
+      institution: National Technical University of Athens (NTUA), Greece
+      year: 2016 - 2022
       description:
-        - Description 1.
-        - Description 2.
+        - GPA<span>:</span> 9.54/10, ranked 1st in <em>Electronics and Systems</em> major among the 2022 class
+        - Thesis<span>:</span> “Photo-realistic neural rendering for emotion-related semantic manipulation of unconstrained facial videos”, Advisors<span>:</span> Prof. <a href="https://robotics.ntua.gr/members/maragos/">Petros Maragos</a>, Dr. <a href="https://users.ics.forth.gr/~troussos/index.html">Anastasios Roussos</a>
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Intern
+      institution: Huawei Technologies Research & Development (UK) Ltd, London, UK
+      year: 2022 - present
+    - title: Graduate Teaching Assistant (GTA)
+      institution: Imperial College London
+      year: 2023 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+        - Modules<span>:</span> Computer Vision (<a href="https://www.imperial.ac.uk/computing/current-students/courses/60006/">COMP60006</a>), Introduction to Machine Learning (<a href="https://www.imperial.ac.uk/computing/current-students/courses/70050/">COMP70050</a>), Deep Learning (<a href="https://www.imperial.ac.uk/computing/current-students/courses/70010/">COMP70010</a>)
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Awards & Honors
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - year: 2023
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Awarded the <b>“Christos Halkias Award”</b> and <b>“Georgios Kontaxis Honors”</b> by National Technical University of Athens for ranking 1st in one of the four majors (Electronics and Systems) among the 2022 graduation class.
+    - year: 2022
+      items:
+        - <a href="https://foivospar.github.io/NED/">Neural Emotion Director</a> was among the <b>CVPR 2022 Best Paper Finalists</b>.
