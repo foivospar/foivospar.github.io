@@ -23,12 +23,15 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Student Researcher
+      institution: Google, London, UK
+      year: Apr, 2024 - present
     - title: Research Intern
       institution: Huawei Technologies Research & Development (UK) Ltd, London, UK
-      year: 2022 - present
+      year: Jul, 2022 - Apr, 2024
     - title: Graduate Teaching Assistant (GTA)
       institution: Imperial College London
-      year: 2023 - present
+      year: Jan, 2023 - present
       description:
         - Modules<span>:</span> Computer Vision (<a href="https://www.imperial.ac.uk/computing/current-students/courses/60006/">COMP60006</a>), Introduction to Machine Learning (<a href="https://www.imperial.ac.uk/computing/current-students/courses/70050/">COMP70050</a>), Deep Learning (<a href="https://www.imperial.ac.uk/computing/current-students/courses/70010/">COMP70010</a>)
 
