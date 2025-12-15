@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="STARCaster: Spatio-Temporal AutoRegressive Video Diffusion for Identity- and View-Aware Talking Portraits">
+  <meta name="keywords" content="STARCaster, Arc2Face, Video Diffusion, ID-embeddings, Stable Diffusion">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>STARCaster: Spatio-Temporal AutoRegressive Video Diffusion for Identity- and View-Aware Talking Portraits</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><span style="color: #B67AA4;">S</span><span style="color: #9FA2B7;">T</span><span style="color: #B19D8D;">A</span><span style="color: #C5A2B8;">R</span><span style="color: #C7A489;">C</span><span style="color: #A1B485;">aster</span>: <span style="color: #B67AA4;">S</span>patio-<span style="color: #9FA2B7;">T</span>emporal <span style="color: #B19D8D;">A</span>uto<span style="color: #C5A2B8;">R</span>egressive Video Diffusion for Identity- and View-Aware Talking Portraits</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://foivospar.github.io/">Foivos Paraperas Papantoniou</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://stathisgln.github.io/">Stathis Galanakis</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://rolpotamias.github.io/">Rolandos Alexandros Potamias</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://bernhard-kainz.com/">Bernhard Kainz</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.imperial.ac.uk/people/s.zafeiriou">Stefanos Zafeiriou</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <sup>1</sup>Imperial College London, UK&nbsp;&nbsp;&nbsp;
+              <sup>2</sup>FAU Erlangen-Nürnberg, Germany
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- arXiv Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop has-text-centered">
+    <div class="hero-body">
+      <div class="content has-text-justified">
+      <video id="teaser" autoplay muted playsinline width="100%">
+        <source src="./static/videos/starcaster.mp4"
+                type="video/mp4">
+      </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper presents STARCaster, an identity-aware spatio-temporal video 
+            diffusion model that addresses both speech-driven portrait animation 
+            and free-viewpoint talking portrait synthesis, given an identity embedding 
+            or reference image, within a unified framework. Existing 2D speech-to-video 
+            diffusion models depend heavily on reference guidance, leading to limited 
+            motion diversity. At the same time, 3D-aware animation typically relies 
+            on inversion through pre-trained tri-plane generators, which often leads to 
+            imperfect reconstructions and identity drift. We rethink reference- and 
+            geometry-based paradigms in two ways. First, we deviate from strict reference 
+            conditioning at pre-training by introducing softer identity constraints. 
+            Second, we address 3D awareness implicitly within the 2D video domain by 
+            leveraging the inherent multi-view nature of video data. STARCaster adopts 
+            a compositional approach progressing from ID-aware motion modeling, to 
+            audio-visual synchronization via lip reading-based supervision, and finally 
+            to novel view animation through temporal-to-spatial adaptation. To overcome 
+            the scarcity of 4D audio-visual data, we propose a decoupled learning approach 
+            in which view consistency and temporal coherence are trained independently. 
+            A self-forcing training scheme enables the model to learn from longer temporal 
+            contexts than those generated at inference, mitigating the overly static 
+            animations common in existing autoregressive approaches. Comprehensive 
+            evaluations demonstrate that STARCaster generalizes effectively across tasks 
+            and identities, consistently surpassing prior approaches in different benchmarks.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+    <!-- Extension  -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+        <p>
+          Given a driving audio signal, STARCaster can animate <strong> real portrait images 
+          (first row) </strong> or synthesize <strong> entirely novel, identity-consistent talking sequences using 
+          only an identity embedding of the subject (second row) </strong>. Thanks to its unified 
+          spatio-temporal design, which leverages the implicit multi-view structure in video data, 
+          our model generalizes to continuous and smooth viewpoint manipulation without 
+          relying on explicit 3D representations.
+        </p>
+        <div>
+            <video id="teaser" controls playsinline width="100%">
+              <source src="./static/videos/teaser.mp4"
+                      type="video/mp4">
+            </video>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+    <!-- Method overview. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+        <p>
+          Building on a pre-trained identity-aware image backbone, we construct 
+          an autoregressive video diffusion architecture, which unifies identity- 
+          and audio-driven animation, reference-based synthesis, and viewpoint control.
+          Spefically, we extend the core attention block of the 2D UNet, with a decoupled 
+          multisource cross-attention mechanism for integrating independent conditioning streams 
+          (identity, audio, and camera), and an extended self-attention mechanism for injecting 
+          appearance features from the input or past frames via a reference encoder.
+        </p>
+        <div>
+            <img src="./static/images/pipeline.jpg" alt="method" class="center">
+        </div>
+         
+          <p>
+            Our <strong>progressive training</strong> strategy departs from existing talking portrait
+            approaches in three ways:
+          </p>
+
+          <ol>
+            <li>
+              Before addressing reference-based animation, we <strong> pre-train the video model using
+              only identity and audio conditioning </strong>, enabling free-motion synthesis under softer
+              identity constraints than those imposed by repeated portrait conditioning.
+              We also introduce a perceptual <strong> lip-reading </strong> loss that enhances audiovisual alignment.
+            </li>
+
+            <li>
+              Then, we propose <strong> a self-forcing strategy</strong>, performing autoregressive generation during
+              training using the model's own previous predictions. This teaches the model to
+              correct its outputs over longer temporal contexts, resulting in more natural motion,
+              greater expressiveness, and improved identity consistency.
+            </li>
+
+            <li>
+              Finally, <strong> a lightweight adaptation stage </strong> optimizes the model for <strong> viewpoint manipulation </strong>
+              using a synthetic dataset of 3D heads rendered along smooth camera trajectories,
+              enabling spatio-temporal generation at inference time.
+            </li>
+          </ol>
+
+        <div>
+            <img src="./static/images/training.jpg" alt="method" class="center">
+        </div>
+        <p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Results</h2>
+      <h2 class="title is-4 has-text-centered">ID-Driven Animations</h2>
+      <div id="results-carousel1" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" controls height="100%">
+            <!-- Your video file here -->
+            <source src="./static/videos/samples_id_2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" controls height="100%">
+            <!-- Your video file here -->
+            <source src="./static/videos/samples_id_1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" controls height="100%">
+            <!-- Your video file here -->
+            <source src="./static/videos/samples_id_3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-4 has-text-centered">Comparison to Audio-Driven Baselines</h2>
+      <div id="results-carousel2" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="c1" controls height="100%">
+            <!-- Your video file here -->
+            <source src="./static/videos/comp_1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="c2" controls height="100%">
+            <!-- Your video file here -->
+            <source src="./static/videos/comp_2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="c3" controls height="100%">
+            <!-- Your video file here -->
+            <source src="./static/videos/comp_3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-4 has-text-centered">Effect of Lip-Reading Loss</h2>
+      <div class="content has-text-justified">
+      <div>
+          <video id="lip" controls playsinline width="100%">
+            <source src="./static/videos/lip_loss.mp4"
+                    type="video/mp4">
+          </video>
+      </div>
+      <p>
+        During audiovisual training, we incorporate a pre-trained lip-reading 
+        network to supervise the correspondence between generated and ground-truth 
+        mouth movements. As can be seen, while the model trained without lip-reading 
+        supervision still produces reasonable audiovisual alignment, 
+        it often fails to precisely generate the appropriate mouth shape.
+      </p>
+     </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{paraperas2025starcaster,
+      title={STARCaster: Spatio-Temporal AutoRegressive Video Diffusion for Identity- and View-Aware Talking Portraits},
+      author={Paraperas Papantoniou, Foivos and Galanakis, Stathis and Potamias, Rolandos Alexandros and Kainz, Bernhard and Zafeiriou, Stefanos},
+      journal={arXiv preprint },
+      year={2025}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              The source code of this website is borrowed from <a
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script>
+bulmaCarousel.attach('#results-carousel1', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    infinite: false,
+    autoplay: false,
+});
+bulmaCarousel.attach('#results-carousel2', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    infinite: false,
+    autoplay: false,
+});
+</script>
+
+
+</body>
+</html>
