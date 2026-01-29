@@ -11,3 +11,7 @@ services:
       - 8080:8080
     volumes:
       - .:/srv/jekyll
+      - bundle:/usr/local/bundle   # <<< add this line
+
+volumes:
+  bundle:                          # <<< define the volume
